@@ -1,0 +1,15 @@
+.header-container {
+    width: 1125px;
+    height: 67px;
+    background-color:#C3CFD9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-title {
+    font-family: 'Roboto', sans-serif;
+    color: #E8833A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
