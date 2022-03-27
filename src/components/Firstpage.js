@@ -24,7 +24,7 @@ export default function Firstpage () {
             </section>
             <section className="movies-section">{
                 updateMovies.map(movie => (
-                        <IndividualMovie  movie={movie}/>
+                        <IndividualMovie  {...movie}/>
                 ))
             }
             </section>

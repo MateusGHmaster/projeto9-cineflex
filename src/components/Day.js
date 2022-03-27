@@ -1,16 +1,16 @@
 import Session from "./Session";
 
-export default function Day ({movieDay}) {
+export default function Day ({weekday, date, showtimes}) {
     
     return (
 
         <section className="day">
             <section className="day-info">
-                <p className="session-date-time">{movieDay.weekday} - {movieDay.date}</p>
+                <p className="session-date-time">{weekday} - {date}</p>
             </section>
             <section className="session-exact-hour">{
-                    movieDay.showtimes.map(moviesSessions => (
-                        <Session moviesSessions={moviesSessions}/>
+                    showtimes.map(showtime => (
+                        <Session showtime={showtime}/>
                     ))
                 }
             </section>

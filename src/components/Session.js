@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
-export default function Session ({session}) {
+export default function Session ({id, name}) {
+    console.log(name);
     return (
 
-        <Link to={`/sessions/${session.id}`}>
+        <Link to={`/seats/${id}`}>
             <section className="single-session">
-                <span className="session-time">{session.name}</span>
+                <p className="session-time">{name}</p>
             </section>
         </Link>
     );
