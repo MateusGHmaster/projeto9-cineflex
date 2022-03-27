@@ -10,7 +10,7 @@ export default function Day ({weekday, date, showtimes}) {
             </section>
             <section className="session-exact-hour">{
                     showtimes.map(showtime => (
-                        <Session showtime={showtime}/>
+                        <Session {...showtime}/>
                     ))
                 }
             </section>
