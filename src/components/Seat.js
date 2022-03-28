@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Seat ({id, name, isAvailable}) {
+export default function Seat ({id}) {
     return (
 
         <Link to={'/success'}>

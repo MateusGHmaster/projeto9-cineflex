@@ -1,0 +1,11 @@
+
+.single-movie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 209px;
+    left: 38px;
+    top: 177px;
+    background-color: #ffff;
+}

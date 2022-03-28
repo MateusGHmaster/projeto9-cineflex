@@ -1,5 +1,21 @@
 .middle-page-title {
     font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-title {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+.movies-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');

@@ -1,5 +1,5 @@
 .header-container {
-    width: 1125px;
+    width: 375px;
     height: 67px;
     background-color:#C3CFD9;
     display: flex;
@@ -8,6 +8,7 @@
 }
 
 .app-title {
+    font-size: 34px;
     font-family: 'Roboto', sans-serif;
     color: #E8833A;
 }
