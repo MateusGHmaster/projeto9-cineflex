@@ -1,0 +1,44 @@
+
+.success-page-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+}
+
+.order-success {
+    font-family: 'Roboto',sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #247A6B;
+}
+
+.info-block {
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+.success-class {
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+.home-button {
+    margin-left: 75px;
+    width: 225px;
+    height: 42px;
+    left: 74px;
+    top: 622px;
+    
+    background: #E8833A;
+    border-radius: 3px;
+}
+
+.buyer-name, .buyer-cpf, .ordered-seat-number {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
