@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 import Day from './Day';
+import './Sessions.css';
 
 export default function Sessions () {
     
@@ -21,7 +22,7 @@ export default function Sessions () {
     } else {
         return (
             <>
-                <section className="page-title">
+                <section className="page-title-2">
                     <p className="middle-page-title">{mainPageTitle}</p>
                 </section>
                 <section className='day-sessions'>{

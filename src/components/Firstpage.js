@@ -19,7 +19,7 @@ export default function Firstpage () {
     return (
 
         <>
-            <section className="page-title">
+            <section className="page-title-1">
                 <p className="middle-page-title">{mainPageTitle}</p>
             </section>
             <section className="movies-section">{
