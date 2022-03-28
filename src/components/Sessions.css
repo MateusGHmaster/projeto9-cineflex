@@ -13,8 +13,8 @@
 
 .single-session {
     display: flex;
-    align-items: center;
-    background-color: aqua;
+    justify-content: space-between;
+    gap: 15px;
     font-size: 18px;
 }
 
@@ -24,10 +24,14 @@
 }
 
 .session-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 83px;
     height: 43px;
     left: 23px;
     top: 227px;
+    color: black;
     
     background: #E8833A;
     border-radius: 3px;

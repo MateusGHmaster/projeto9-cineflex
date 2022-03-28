@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import './Seats.css';
 import Seat from './Seat';
 
 import axios from 'axios';
@@ -59,28 +60,37 @@ export default function Seats () {
 
             <>
                 <section className='seats'>
-                    <section className='middle-page-title'>{mainPageTitle}</section>
+                    <section className="page-title-3">
+                        <p className="middle-page-title">{mainPageTitle}</p>
+                    </section>
                     <section className='all-seats'>{
                             sessions.seats.map(seat => (
-                                <Seat {...seat} handleSeats={handleSeats}/>
+                                <Seat {...seat} handleSeats={handleSeats} handleFormSubmit={handleFormSubmit}/>
                             ))
                         }
                     </section>
                 </section>
+                <section className='colored-examples'>
+                    <div className='selected-example'></div>
+                    <div className='available-example'></div>
+                    <div className='unavailable-example'></div>
+                </section>
                 <section className='seat-info'>
-
+                    <div className='seat-example'>Selecionado</div>
+                    <div className='seat-example'>Disponível</div>
+                    <div className='seat-example'>Indisponível</div>
                 </section>
                 <section className='customer-data'>
                     <div className='customer-name'>
                         <p>Nome do comprador:</p>
-			            <input value={name} onChange={input => (setName(input.target.value))} placeholder="Digite seu nome..." />
+			            <input className='customer-input' value={name} onChange={input => (setName(input.target.value))} placeholder="Digite seu nome..." />
                     </div>
                     <div className='customer-cpf'>
                         <p>CPF:</p>
-			            <input value={cpf} onChange={input => (setCPF(input.target.value))} placeholder="Digite seu CPF..." />
+			            <input className='customer-input' value={cpf} onChange={input => (setCPF(input.target.value))} placeholder="Digite seu CPF..." />
                     </div>
                     <section className='finish'>
-                        <button type='button' className='finish-seat' onClick={handleFormSubmit} />
+                        <button type='button' className='finish-seat' onClick={handleFormSubmit}>Reservar assento(s)</button>
                     </section>
                 </section>
             </>
